@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey Form Project Jahdiel Marcano">
+    <meta name="author" content="Jahdiel Marcano">
+    <meta name="robots" conten="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo_jimv.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Survey Form:</h1>
+    <p id="description">Certification Project Survey FreeCodeCamp</p>
+    <main>
+
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name:<input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+                <label id="email-label">Email:<input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+                <label id="number-label">Age:<span>(optional)</span><input min="13" max="100" type="number" name="number" id="number" placeholder="Enter your age"></label>
+            </fieldset>
+            <fieldset>
+                <label id="select-label">
+                    <p>Objetive:</p>
+                    <select name="dropbox" id="dropbox">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="learn">Learn</option>
+                        <option value="teach">Teach</option>
+                        <option value="experience">Gain Experience</option>
+                    </select>
+                </label>
+
+                <p>Have any previous knowledge</p>
+
+                <label class="radio-options"><input type="radio" name="option-radio" value="beginner"> Beginner</label>
+                <label class="radio-options"><input type="radio" name="option-radio" value="medium"> Medium</label>
+                <label class="radio-options"><input type="radio" name="option-radio" value="advanced"> Advanced</label>
+            </fieldset>
+
+            <fieldset>
+            <label id="programming-language">
+                <p>Choe a Programming Language: </p>
+                <select name="languages-options" id="dropbox">
+                    <option disabled selected value="">Select an option</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                </select>
+            </label>
+
+            <p>Areas of Interest</p>
+
+            <label class="checkbox-options"><input type="checkbox" name="interest" value="game-dev"> Game Development</label>
+            <label class="checkbox-options"><input type="checkbox" name="interest" value="web-dev"> Web Development</label>
+            <label class="checkbox-options"><input type="checkbox" name="interest" value="machine-learn"> Machine Learning</label>
+
+            </fieldset>
+
+            <fieldset>
+                <label id="textarea-label">
+                    Any comments or suggestions?
+                    <textarea rows="10" cols="40" placeholder="Enter your comments here"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        
+    </main>
+    
+</body>
+</html>
