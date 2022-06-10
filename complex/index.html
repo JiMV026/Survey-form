@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="Form (Survey) project for Personal Portfolio">
+    <meta name="author" content="Jahdiel Marcano">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo_jimv.ico" type="image/x-icon">
+    <title>Complex Form</title>
+</head>
+<body>
+    <main>
+        <div id="logo_div">
+            <img src="../images/logo_jimv.png" alt="Logo JiMV026">
+        </div>
+        <div id="profile">
+            <h1>Personal Information</h1>
+            <form action="#" id="profile_info">
+                <label for="first_name"><input type="text" placeholder="Enter your firstname" name="first_name" id="first_name" required></label>
+                <label for="last_name"><input type="text" placeholder="Enter your lastname" name="last_name" id="last_name" required></label>
+                <label for="age"><input type="number" placeholder="Age" name="age" id="age" min="18" max="100" required></label>
+                <input type="submit" value="Save" id="button"><input type="reset" value="Reset" id="button">
+            </form>
+        </div>
+        <hr>
+        <div id="email">
+            <h2>Email</h2>
+            <form action="#">
+                <label for="username"><input type="text" placeholder="Enter your username" name="username" id="username"></label>
+                <label for="email_address"><input type="email" placeholder="Enter your email" name="email_address" id="email_address"></label>
+                <label for="password"><input type="password" placeholder="Enter your password" name="password" id="password"></label>
+                <input type="submit" value="Submit" id="button"><input type="reset" value="Reset" id="button">
+            </form>
+        </div>
+        <hr>
+        <div id="about">
+            <h2>Stuff</h2>
+            <form action="#">
+                <label for="chosen_date">Chose a date<input type="date" name="chosen_date" id="chosen_date"></label>
+                <label for="chosen_color">Chose a color<input type="color" name="chosen_color" id="chosen_color"> </label>
+                <label for="selection">
+                    <select name="selection" id="selection">
+                        <option value="#" selected disabled>What you say?</option>
+                        <option value="option_yes">Yes</option>
+                        <option value="option_no">No</option>
+                        <option value="option_maybe">Maybe</option>
+                    </select>
+                </label>
+
+                <h2>Radio</h2>
+
+                <label for="option_1"><input type="radio" name="radio_options" id="option_1" value="option_1"> Option 1</label>
+                <label for="option_2"><input type="radio" name="radio_options" id="option_2" value="option_2"> Option 2</label>
+                <label for="option_3"><input type="radio" name="radio_options" id="option_3" value="option_3"> Option 3</label>
+
+                <h2>Checkbox</h2>
+
+                <label for="checbox_option_1"><input type="checkbox" id="checbox_option_1" name="checbox_option_1" value="of_course"> Of course</label>
+                <label for="checbox_option_2"><input type="checkbox" id="checbox_option_2" name="checbox_option_2" value="absolutely"> Absolutely</label>
+                <label for="checbox_option_3"><input type="checkbox" id="checbox_option_3" name="checbox_option_3" value="hell_yeah"> Hell yeah</label>
+                <label for="checbox_option_4"><input type="checkbox" id="checbox_option_4" name="checbox_option_4" value="no"> No</label>
+
+                <h2>Range</h2>
+
+                <label for="vol">Range (between 1 and 10)
+                    <input type="range" name="vol" id="vol" min="1" max="10">
+                </label>
+
+                <label for="textarea_comments">
+                    <textarea name="textarea_comments" id="textarea_comments" cols="40" rows="10">Enter your comments here</textarea>
+                </label>
+
+                <input type="submit" value="Submit" id="button"><input type="reset" value="Reset" id="button">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
